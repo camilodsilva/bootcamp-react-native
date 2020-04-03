@@ -6,6 +6,7 @@ module.exports = {
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
+    __DEV__: 'readonly',
   },
   parser: 'babel-eslint',
   parserOptions: {
@@ -19,6 +20,7 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
-    'import/prefer-detault-export': 'off',
+    'react/static-property-placement': 0,
+    'import/prefer-default-export': 'off',
   },
 };
